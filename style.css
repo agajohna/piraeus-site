@@ -1,0 +1,81 @@
+:root {
+    color-scheme: light dark;
+
+    /* Same sky-to-dawn colors as the app icon and onboarding window. */
+    --sky: #6fa8dc;
+    --dawn: #fde3c0;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background: linear-gradient(180deg,
+        color-mix(in srgb, var(--sky) 14%, Canvas),
+        Canvas 40%,
+        color-mix(in srgb, var(--dawn) 22%, Canvas));
+    color: CanvasText;
+    font: 16px/1.55 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", sans-serif;
+}
+
+main {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 56px 24px 72px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+header img {
+    width: 96px;
+    height: 96px;
+}
+
+.name {
+    margin-top: 8px;
+    color: color-mix(in srgb, CanvasText 60%, transparent);
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+}
+
+.name a {
+    color: inherit;
+    text-decoration: none;
+}
+
+h1 {
+    margin: 6px 0 0;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+h2 {
+    margin: 32px 0 8px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+p, li {
+    margin: 0 0 12px;
+}
+
+ul {
+    padding-left: 22px;
+}
+
+a {
+    color: color-mix(in srgb, var(--sky) 70%, CanvasText);
+}
+
+.updated, footer {
+    color: color-mix(in srgb, CanvasText 60%, transparent);
+    font-size: 13px;
+}
+
+footer {
+    margin-top: 48px;
+    text-align: center;
+}
